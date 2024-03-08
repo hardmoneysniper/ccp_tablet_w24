@@ -744,6 +744,21 @@ image {
 }
 
 @media only screen and (min-width: 768px) {
+  .hidden-mobile {
+    position: absolute;
+    left: -1000px;
+    height: 25px;
+    background-color: white;
+    opacity: 0;
+  }
+
+  .hidden-mobile:focus {
+      left: 1%;
+      opacity: 1;
+      position: fixed;
+      top: 10px;
+  }
+  
   nav ul a {
     font-size: 2.5rem;
   }
